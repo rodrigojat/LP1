@@ -21,7 +21,7 @@ int main() {
 		scanf("%d",&temps[i]);
 		media+=(temps[i]);
 	}
-	media=media/5;
+	media=media/50;
 	printf("media das temperaturas:%d\n",media);
 	soma=AcimaMedia(temps,media);
 	printf("acima da media:%d\n",soma);
