@@ -7,7 +7,7 @@ int eh_primo(int a){
 		if (a%i == 0)
 			test++;
 	}
-	if (test == 2)
+	if (test <= 2)
 		b=1;
 	return b;
 	
