@@ -2,7 +2,7 @@
 
 
 
-int Media(int* vec,int n){
+float Media(int* vec,int n){
     int soma=0,i=1;
     for (i=1; i<=n; i++){
         soma+=vec[i];
