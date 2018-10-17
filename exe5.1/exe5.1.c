@@ -9,12 +9,12 @@ int main(){
 	if (a>b)
 	{
 			p = &a;
-			*p = (a-50);
+			*p = (*p-50);
 	}
 	else
 	{
 			p = &b;
-			*p = (b-50);
+			*p = (*p-50);
 	}
 
 	printf("%d %d\n", a,b);	
