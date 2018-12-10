@@ -28,12 +28,11 @@ void Preenche_vetor(Ponto vec[])
     }
 }
 
-void Distancia(Ponto vec[])
+Ponto Distancia(Ponto vec[],Ponto distante)
 {
     int i;
     double maior = 0;
     double conta;
-    Ponto distante;
     for(i = 0;i<10;i++)
     {
         conta = 0;
@@ -53,8 +52,7 @@ void Distancia(Ponto vec[])
 int main()
 {
     Ponto vetor[10];
-    Ponto p1;
-    p1 = preencher_ponto(1,2);
+    Ponto distante;
     Preenche_vetor(vetor);
-    Distancia(vetor);
+    Distancia(vetor,distante);
 }
