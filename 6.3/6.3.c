@@ -28,11 +28,12 @@ void Preenche_vetor(Ponto vec[])
     }
 }
 
-Ponto Distancia(Ponto vec[],Ponto distante)
+Ponto Distancia(Ponto vec[])
 {
     int i;
     double maior = 0;
     double conta;
+    Ponto distante;
     for(i = 0;i<10;i++)
     {
         conta = 0;
@@ -43,7 +44,7 @@ Ponto Distancia(Ponto vec[],Ponto distante)
             distante.y = vec[i].y;
         }
     }
-    printf("O ponto mais distante de (0,0) eh: (%d,%d).\n",distante.x,distante.y);
+    return distante;
 }
 
 
@@ -52,7 +53,8 @@ Ponto Distancia(Ponto vec[],Ponto distante)
 int main()
 {
     Ponto vetor[10];
-    Ponto distante;
     Preenche_vetor(vetor);
-    Distancia(vetor,distante);
+    Ponto distante;
+    distante=Distancia(vetor);
+    printf("O ponto mais distante de (0,0) eh: (%d,%d).\n",distante.x,distante.y);
 }
